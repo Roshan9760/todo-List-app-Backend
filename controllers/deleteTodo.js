@@ -9,9 +9,9 @@ exports.deleteTodo = async(req,res) =>{
 
          await Todo.findByIdAndDelete(id);
          res.json({
-            success:true,
-            message:"Todo DELETED"
-         })
+           success: true,
+           message: "Todo DELETED Successfully",
+         });
            
      } 
      catch (error) {
@@ -19,7 +19,7 @@ exports.deleteTodo = async(req,res) =>{
            res.status(500).json({
                 success:false,
                 error:error.message,
-                message:"server Error",
+                message:"Server Error While Deleting ",
            })
      }
 }

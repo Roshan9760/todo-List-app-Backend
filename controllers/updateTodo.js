@@ -20,7 +20,7 @@ exports.updateTodo = async(req,res) =>{
          res.status(200).json({
             success:true,
             data:todo,
-            message:`Updated Successfully`
+            message:`TODO Updated Successfully`
          })
         
      } 
@@ -32,7 +32,7 @@ exports.updateTodo = async(req,res) =>{
               {
                 success:false,
                 error:error.message,
-                message:"Server Error",
+                message:"Server Error While Updating Todo",
                 
               }
            )

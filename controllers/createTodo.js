@@ -17,7 +17,7 @@ exports.createTodo = async(req,res) =>{
              {
                 success:true,
                 data:response,
-                message:'Entery created Successfully'
+                message:'Entery created Successfully in Database'
              }
          )
      } 

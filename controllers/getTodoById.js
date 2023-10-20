@@ -33,7 +33,7 @@ exports.getTodoById = async(req,res) =>{
            res.status(500).json(
               {
                 success:false,
-                data:"Internal Server Error",
+                data:"Internal Server Error While Fetching The Data",
                 message:error.message,
               }
            )
